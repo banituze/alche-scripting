@@ -4,7 +4,7 @@ import requests
 
 
 def count_words(subreddit, word_list=[], hot_list=[], after=""):
-    """Returns a count of given words in titles of all hot posts for a subreddit"""
+    """Returns a count of given words in titles of all hot posts"""
     URL = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
 
     HEADERS = {"User-Agent": "PostmanRuntime/7.35.0"}
